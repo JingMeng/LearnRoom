@@ -1,9 +1,13 @@
 package com.markfrain.sample.learnroom.entitys;
 
 import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 @Entity(tableName = "city")
 public class City {
+    @PrimaryKey(autoGenerate = true)
+    public long id;
+
     String city;
     String cityCode;
 

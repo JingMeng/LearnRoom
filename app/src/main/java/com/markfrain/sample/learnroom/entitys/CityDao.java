@@ -13,7 +13,7 @@ public interface CityDao {
     @Query("SELECT * FROM city WHERE  city =:city")
     LiveData<List<City>> getAll(String city);
 
-    @Query("SELECT * FROM system_user")
+    @Query("SELECT * FROM city")
     LiveData<List<City>> getAll();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.markfrain.sample.learnroom.adapter.ListAdapter;
 import com.markfrain.sample.learnroom.databinding.ActivityMainBinding;
+import com.markfrain.sample.learnroom.entitys.City;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         binding.recyclerView.setAdapter(adapter);
     }
 
-    public void getSystemUserSuccess(List<SystemUser> systemUsers) {
+    public void getSystemUserSuccess(List<City> systemUsers) {
         adapter.setDataList(systemUsers);
     }
 }
